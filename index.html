@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre | Portafolio Desarrollador</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="font-bold text-xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Dev.Portafolio</span>
+            <div class="space-x-6 text-sm font-medium text-slate-400">
+                <a href="#proyectos" class="hover:text-cyan-400 transition">Proyectos</a>
+                <a href="#sobre-mi" class="hover:text-cyan-400 transition">Sobre mí</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="max-w-5xl mx-auto px-4 py-20 text-center md:text-left md:flex md:items-center md:justify-between gap-8">
+        <div class="space-y-4 max-w-2xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+                Hola, soy <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Yael Lopez Amador</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 font-medium">
+                Estudiante de Ingeniería en TI | Full-Stack Developer & Redes
+            </p>
+            <p class="text-slate-400 max-w-lg">
+                Apasionado por construir aplicaciones robustas, optimizar infraestructura de red y aplicar estándares de calidad internacional en el software.
+            </p>
+        </div>
+        <!-- Si tienes una foto o un avatar, puedes ponerlo aquí -->
+        <div class="mt-8 md:mt-0 flex justify-center">
+            <div class="w-40 h-40 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 p-1 shadow-xl shadow-cyan-500/10">
+                <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center text-4xl">💻</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seccion Proyectos -->
+    <main id="proyectos" class="max-w-5xl mx-auto px-4 py-16 border-t border-slate-800">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+            <span class="text-cyan-400">//</span> Proyectos Destacados
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Tarjeta Proyecto 1: PWA -->
+            <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between">
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400">React</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400">NestJS</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400">PWA</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400">ISO 25010</span>
+                    </div>
+                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Sistema de Inventario y Punto de Venta (PWA)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Aplicación Web Progresiva diseñada para la automatización de ventas y control de stock. Soporta sincronización offline y generación de reportes financieros en tiempo real.
+                    </p>
+                    <blockquote class="border-l-2 border-cyan-500 pl-3 text-xs text-slate-400 italic mb-6">
+                        <strong>Logro destacado:</strong> Arquitectura evaluada bajo el estándar ISO/IEC 25010, garantizando alta seguridad y mantenibilidad.
+                    </blockquote>
+                </div>
+                <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
+                    <a href="#" class="text-cyan-400 hover:underline">Ver Código &rarr;</a>
+                    <a href="#" class="text-slate-400 hover:text-slate-200">Demo</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta Proyecto 2: App Móvil -->
+            <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between">
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400">Android Studio</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-orange-500/10 text-orange-400">Kotlin / Java</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400">AdMob</span>
+                    </div>
+                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">App Móvil de Entrenamiento por Intervalos</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Aplicación nativa enfocada en la gestión de tiempos y rutinas de alta intensidad para la preparación física en deportes de combate.
+                    </p>
+                    <blockquote class="border-l-2 border-amber-500 pl-3 text-xs text-slate-400 italic mb-6">
+                        <strong>Logro destacado:</strong> Implementación de lógica de Audio Focus para evitar conflictos de sonido y optimización del ciclo de vida en segundo plano.
+                    </blockquote>
+                </div>
+                <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
+                    <a href="#" class="text-cyan-400 hover:underline">Ver Código &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta Proyecto 3: Redes (Opcional) -->
+            <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between md:col-span-2">
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-red-500/10 text-red-400">Cisco Packet Tracer</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-sky-500/10 text-sky-400">OSPFv3</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-400">IPv6</span>
+                    </div>
+                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Diseño de Infraestructura de Red Escalable</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Simulación e implementación de topologías corporativas complejas con enrutamiento dinámico y políticas de seguridad perimetral.
+                    </p>
+                </div>
+                <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
+                    <span class="text-slate-500 italic text-xs">Proyecto Académico Documentado</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="sobre-mi" class="max-w-5xl mx-auto px-4 py-12 border-t border-slate-800 text-center text-sm text-slate-500">
+        <p>© 2026 Tu Nombre. Desarrollado con HTML y Tailwind CSS.</p>
+        <div class="mt-4 space-x-4">
+            <a href="#" class="hover:text-slate-300 transition">GitHub</a>
+            <a href="#" class="hover:text-slate-300 transition">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>
