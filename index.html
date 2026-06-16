@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Nombre | Portafolio Desarrollador</title>
+    <title>Yael Lopez Amador | Portafolio Desarrollador</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -27,13 +27,12 @@
                 Hola, soy <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Yael Lopez Amador</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-400 font-medium">
-                Estudiante de Ingeniería en informatica | Full-Stack Developer
+                Estudiante de Ingeniería en Informática | Full-Stack Developer
             </p>
             <p class="text-slate-400 max-w-lg">
                 Apasionado por construir aplicaciones robustas y aplicar estándares de calidad internacional en el software.
             </p>
         </div>
-        <!-- Si tienes una foto o un avatar, puedes ponerlo aquí -->
         <div class="mt-8 md:mt-0 flex justify-center">
             <div class="w-40 h-40 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 p-1 shadow-xl shadow-cyan-500/10">
                 <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center text-4xl">💻</div>
@@ -52,76 +51,198 @@
             <!-- Tarjeta Proyecto 1: PWA -->
             <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between">
                 <div>
+                    
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400">React</span>
-                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400">NestJS</span>
                         <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400">PWA</span>
-                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400">ISO 25010</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400">Cloud DB</span>
                     </div>
                     <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Sistema de Inventario y Punto de Venta (PWA)</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Aplicación Web Progresiva diseñada para la automatización de ventas y control de stock. Soporta sincronización offline y generación de reportes financieros en tiempo real.
+                        Aplicación Web Progresiva para automatización de ventas y gestión de stock conectada a una base de datos en la nube. Diseñada bajo métricas de calidad y alta disponibilidad.
                     </p>
-                    <blockquote class="border-l-2 border-cyan-500 pl-3 text-xs text-slate-400 italic mb-6">
-                        <strong>Logro destacado:</strong> Arquitectura evaluada bajo el estándar ISO/IEC 25010, garantizando alta seguridad y mantenibilidad.
-                    </blockquote>
                 </div>
                 <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
-                    <a href="#" class="text-cyan-400 hover:underline">Ver Código &rarr;</a>
-                    <a href="#" class="text-slate-400 hover:text-slate-200">Demo</a>
+                    <!-- Cambiado a botón con evento para abrir la vista previa -->
+                    <button onclick="openModal('modal-pwa')" class="text-cyan-400 hover:underline cursor-pointer">Vista previa &rarr;</button>
+                   
                 </div>
             </div>
 
-            <!-- Tarjeta Proyecto 2: App Móvil -->
+              <!-- Tarjeta recetario  -->
             <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between">
                 <div>
+                    
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400">Android Studio</span>
-                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-orange-500/10 text-orange-400">Kotlin / Java</span>
-                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400">AdMob</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400">React</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400"> Nest JS</span>
                     </div>
-                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">App Móvil de Entrenamiento por Intervalos</h3>
+                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Recetario de comida</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Aplicación nativa enfocada en la gestión de tiempos y rutinas de alta intensidad para la preparación física en deportes de combate.
+                        Aplicación Web para la gestion de recetas incluyenbdo funcionalidades com busqueda por categoria y letra inical
                     </p>
-                    <blockquote class="border-l-2 border-amber-500 pl-3 text-xs text-slate-400 italic mb-6">
-                        <strong>Logro destacado:</strong> Implementación de lógica de Audio Focus para evitar conflictos de sonido y optimización del ciclo de vida en segundo plano.
-                    </blockquote>
                 </div>
                 <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
-                    <a href="#" class="text-cyan-400 hover:underline">Ver Código &rarr;</a>
+                    <!-- Cambiado a botón con evento para abrir la vista previa -->
+                    <button onclick="openModal('recetario')" class="text-cyan-400 hover:underline cursor-pointer">Vista previa &rarr;</button>
+                   
                 </div>
             </div>
-
-            <!-- Tarjeta Proyecto 3: Redes (Opcional) -->
-            <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between md:col-span-2">
+             <!-- Tarjeta directorio  -->
+            <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between">
                 <div>
+                    
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-red-500/10 text-red-400">Cisco Packet Tracer</span>
-                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-sky-500/10 text-sky-400">OSPFv3</span>
-                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-400">IPv6</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400"> Nest JS</span>
                     </div>
-                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Diseño de Infraestructura de Red Escalable</h3>
+                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Directorio de contactos</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Simulación e implementación de topologías corporativas complejas con enrutamiento dinámico y políticas de seguridad perimetral.
+                        Aplicación Web para la comsulta de infomacion de contacto con filtros por genero ciudad y edad
                     </p>
                 </div>
                 <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
-                    <span class="text-slate-500 italic text-xs">Proyecto Académico Documentado</span>
+                    <!-- Cambiado a botón con evento para abrir la vista previa -->
+                    <button onclick="openModal('directorio')" class="text-cyan-400 hover:underline cursor-pointer">Vista previa &rarr;</button>
+                   
                 </div>
             </div>
-
         </div>
     </main>
+
+    <!-- VENTANA MODAL 1: GALERÍA SITEMA DE INVENTARIO -->
+
+    <div id="modal-pwa" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-slate-800 border border-slate-700 max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
+            <div class="p-6 border-b border-slate-700 flex justify-between items-center bg-slate-800/50">
+                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Sistema de Inventario PWA</h3>
+                <button onclick="closeModal('modal-pwa')" class="text-slate-400 hover:text-white font-bold text-lg p-2 cursor-pointer">&times; Cerrar</button>
+            </div>
+            <!-- Contenedor con Scroll por si metes muchas imágenes -->
+            <div class="p-6 overflow-y-auto space-y-6">
+                <p class="text-sm text-slate-300">Aquí puedes ver capturas detalladas del funcionamiento real del sistema:</p>
+                
+                <!-- Añade aquí las rutas de tus imágenes reales -->
+                <div class="space-y-4">
+                   
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">1. Panel de Control de Inventario</span>
+                        <img src="img/vj/3.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">2. Panel de ventas</span>
+                        <img src="img/vj/4.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">3. Carrito de compras</span>
+                        <img src="img/vj/5.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">4. Registro de plantas</span>
+                        <img src="img/vj/1.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VENTANA MODAL 1: Recetario -->
+    <div id="recetario" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-slate-800 border border-slate-700 max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
+            <div class="p-6 border-b border-slate-700 flex justify-between items-center bg-slate-800/50">
+                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Sistema de Inventario PWA</h3>
+                <button onclick="closeModal('recetario')" class="text-slate-400 hover:text-white font-bold text-lg p-2 cursor-pointer">&times; Cerrar</button>
+            </div>
+            <!-- Contenedor con Scroll por si metes muchas imágenes -->
+            <div class="p-6 overflow-y-auto space-y-6">
+                <p class="text-sm text-slate-300">Aquí puedes ver capturas detalladas del funcionamiento real del sistema:</p>
+                
+                <!-- Añade aquí las rutas de tus imágenes reales -->
+                <div class="space-y-4">
+                   
+                
+                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">1 Pantalla principal</span>
+                        <img src="img/recetario/1.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">2. Busqueda por categoria</span>
+                        <img src="img/recetario/2.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">3. Receta</span>
+                        <img src="img/recetario/3.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VENTANA MODAL 1: Directorio -->
+    <div id="directorio" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-slate-800 border border-slate-700 max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
+            <div class="p-6 border-b border-slate-700 flex justify-between items-center bg-slate-800/50">
+                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Sistema de Inventario PWA</h3>
+                <button onclick="closeModal('directorio')" class="text-slate-400 hover:text-white font-bold text-lg p-2 cursor-pointer">&times; Cerrar</button>
+            </div>
+            <!-- Contenedor con Scroll por si metes muchas imágenes -->
+            <div class="p-6 overflow-y-auto space-y-6">
+                <p class="text-sm text-slate-300">Aquí puedes ver capturas detalladas del funcionamiento real del sistema:</p>
+                
+                <!-- Añade aquí las rutas de tus imágenes reales -->
+                <div class="space-y-4">
+                   
+                
+                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">1 Pantalla principal</span>
+                        <img src="img/directorio/1.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">2. Visualizacion de infomracion</span>
+                        <img src="img/directorio/2.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">1 Filtro de busqueda por genero</span>
+                        <img src="img/directorio/3.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer id="sobre-mi" class="max-w-5xl mx-auto px-4 py-12 border-t border-slate-800 text-center text-sm text-slate-500">
         <p>© 2026 Yael Lopez Amador. Desarrollado con HTML y Tailwind CSS.</p>
         <div class="mt-4 space-x-4">
             <a href="#" class="hover:text-slate-300 transition">GitHub</a>
-            <a href="#" class="hover:text-slate-300 transition">LinkedIn</a>
         </div>
     </footer>
 
+    <!-- LOGICA SCRIPT INTERACTIVO (Vanilla JS) -->
+    <script>
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Evita scroll de fondo
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = ''; // Devuelve el scroll
+            }
+        }
+
+        // Cerrar al hacer clic fuera de la caja del modal
+        window.onclick = function(event) {
+            if (event.target.classList.contains('fixed')) {
+                event.target.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+    </script>
 </body>
 </html>
