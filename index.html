@@ -97,12 +97,50 @@
                     </div>
                     <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Directorio de contactos</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Aplicación Web para la comsulta de infomacion de contacto con filtros por genero ciudad y edad
+                        Aplicación Web para la consulta de información de contacto con filtros por género, ciudad y edad
                     </p>
                 </div>
                 <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
                     <!-- Cambiado a botón con evento para abrir la vista previa -->
                     <button onclick="openModal('directorio')" class="text-cyan-400 hover:underline cursor-pointer">Vista previa &rarr;</button>
+                   
+                </div>
+            </div>
+
+            <!-- Tarjeta imc  -->
+            <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between">
+                <div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400">React</span>
+                    </div>
+                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Calculadora de IMC</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Aplicación Web para el cálculo del Índice de Masa Corporal con interfaz intuitiva
+                    </p>
+                </div>
+                <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
+                    <!-- Cambiado a botón con evento para abrir la vista previa -->
+                    <button onclick="openModal('icm')" class="text-cyan-400 hover:underline cursor-pointer">Vista previa &rarr;</button>
+                   
+                </div>
+            </div>
+
+             <!-- Tarjeta entrenamientoPro  -->
+            <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between">
+                <div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400">Kotlin</span>
+                    </div>
+                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Aplicacion de Entrenamiento</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Aplicación movil para la gestion de tiempo personalizado en rutinas de entrenamiento
+                    </p>
+                </div>
+                <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
+                    <!-- Cambiado a botón con evento para abrir la vista previa -->
+                    <button onclick="openModal('entrenamientoPro')" class="text-cyan-400 hover:underline cursor-pointer">Vista previa &rarr;</button>
                    
                 </div>
             </div>
@@ -149,7 +187,7 @@
     <div id="recetario" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-slate-800 border border-slate-700 max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
             <div class="p-6 border-b border-slate-700 flex justify-between items-center bg-slate-800/50">
-                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Sistema de Inventario PWA</h3>
+                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Sistema para gestion de recetas</h3>
                 <button onclick="closeModal('recetario')" class="text-slate-400 hover:text-white font-bold text-lg p-2 cursor-pointer">&times; Cerrar</button>
             </div>
             <!-- Contenedor con Scroll por si metes muchas imágenes -->
@@ -181,7 +219,7 @@
     <div id="directorio" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-slate-800 border border-slate-700 max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
             <div class="p-6 border-b border-slate-700 flex justify-between items-center bg-slate-800/50">
-                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Sistema de Inventario PWA</h3>
+                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Sistema de gestion de contactos</h3>
                 <button onclick="closeModal('directorio')" class="text-slate-400 hover:text-white font-bold text-lg p-2 cursor-pointer">&times; Cerrar</button>
             </div>
             <!-- Contenedor con Scroll por si metes muchas imágenes -->
@@ -203,6 +241,65 @@
                      <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
                         <span class="text-xs text-slate-400 block mb-2">1 Filtro de busqueda por genero</span>
                         <img src="img/directorio/3.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- VENTANA MODAL icm -->
+
+    <div id="icm" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-slate-800 border border-slate-700 max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
+            <div class="p-6 border-b border-slate-700 flex justify-between items-center bg-slate-800/50">
+                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Calculadora de IMC</h3>
+                <button onclick="closeModal('icm')" class="text-slate-400 hover:text-white font-bold text-lg p-2 cursor-pointer">&times; Cerrar</button>
+            </div>
+            <!-- Contenedor con Scroll por si metes muchas imágenes -->
+            <div class="p-6 overflow-y-auto space-y-6">
+                <p class="text-sm text-slate-300">Aquí puedes ver capturas detalladas del funcionamiento real del sistema:</p>
+                
+                <!-- Añade aquí las rutas de tus imágenes reales -->
+                <div class="space-y-4">
+                   
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">1. Interface paraa calcular ICM</span>
+                        <img src="img/imc/1.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VENTANA MODAL entrenamientoPro -->
+
+    <div id="entrenamientoPro" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-slate-800 border border-slate-700 max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
+            <div class="p-6 border-b border-slate-700 flex justify-between items-center bg-slate-800/50">
+                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Aplicacion de Entrenamiento</h3>
+                <button onclick="closeModal('entrenamientoPro')" class="text-slate-400 hover:text-white font-bold text-lg p-2 cursor-pointer">&times; Cerrar</button>
+            </div>
+            <!-- Contenedor con Scroll por si metes muchas imágenes -->
+            <div class="p-6 overflow-y-auto space-y-6">
+                <p class="text-sm text-slate-300">Aquí puedes ver capturas detalladas del funcionamiento real de la aplicacion: </p>
+                
+                <!-- Añade aquí las rutas de tus imágenes reales -->
+                <div class="space-y-4">
+                   
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">1. Interface principal de la aplicacion</span>
+                        <img src="img/entrenamientoPro/1.jpeg" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">2. Creacion de rutina personalizada</span>
+                        <img src="img/entrenamientoPro/2.jpeg" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    </div>
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">3. Rutina en progreso</span>
+                        <img src="img/entrenamientoPro/3.jpeg" alt="Captura 3" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+3+no+encontrada'">
                     </div>
                     
                 </div>
