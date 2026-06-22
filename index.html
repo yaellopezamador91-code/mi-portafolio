@@ -4,33 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yael Lopez Amador | Portafolio Desarrollador</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
 
-    <!-- Navbar -->
     <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-slate-800">
         <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-            <span class="font-bold text-xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Dev.Portafolio</span>
+            <span class="font-bold text-xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Dev.Portfolio</span>
             <div class="space-x-6 text-sm font-medium text-slate-400">
                 <a href="#proyectos" class="hover:text-cyan-400 transition">Proyectos</a>
-                <a href="#sobre-mi" class="hover:text-cyan-400 transition">Sobre mí</a>
+                <a href="#sobre-mi" class="hover:text-cyan-400 transition">Resumen Profesional</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="max-w-5xl mx-auto px-4 py-20 text-center md:text-left md:flex md:items-center md:justify-between gap-8">
+    <header id="sobre-mi" class="max-w-5xl mx-auto px-4 py-20 text-center md:text-left md:flex md:items-center md:justify-between gap-8">
         <div class="space-y-4 max-w-2xl">
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
                 Hola, soy <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Yael Lopez Amador</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-400 font-medium">
-                Estudiante de Ingeniería en Informática | Full-Stack Developer
+                Ingeniería en Informática | Full-Stack Developer
             </p>
-            <p class="text-slate-400 max-w-lg">
-                Apasionado por construir aplicaciones robustas y aplicar estándares de calidad internacional en el software.
+            <p class="text-slate-400 leading-relaxed">
+                Desarrollador orientado a soluciones con sólida formación técnica en arquitectura de software. Especializado en el diseño y despliegue de aplicaciones web híbridas y plataformas móviles nativas. Dominio avanzado de ecosistemas modernos como **React, TypeScript, Node.js, NestJS, Kotlin**, y diseño de bases de datos relacionales bajo estándares internacionales de calidad.
             </p>
         </div>
         <div class="mt-8 md:mt-0 flex justify-center">
@@ -40,7 +37,6 @@
         </div>
     </header>
 
-    <!-- Seccion Proyectos -->
     <main id="proyectos" class="max-w-5xl mx-auto px-4 py-16 border-t border-slate-800">
         <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
             <span class="text-cyan-400">//</span> Proyectos Destacados
@@ -48,280 +44,258 @@
 
         <div class="grid md:grid-cols-2 gap-8">
             
-            <!-- Tarjeta Proyecto 1: PWA -->
             <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between">
                 <div>
-                    
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400">React</span>
                         <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400">PWA</span>
-                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400">Cloud DB</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400">Vite</span>
                     </div>
                     <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Sistema de Inventario y Punto de Venta (PWA)</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Aplicación Web Progresiva para automatización de ventas y gestión de stock conectada a una base de datos en la nube. Diseñada bajo métricas de calidad y alta disponibilidad.
+                        Aplicación Web Progresiva para automatización de ventas y gestión de stock conectada a bases de datos en la nube.
                     </p>
                 </div>
                 <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
-                    <!-- Cambiado a botón con evento para abrir la vista previa -->
-                    <button onclick="openModal('modal-pwa')" class="text-cyan-400 hover:underline cursor-pointer">Vista previa &rarr;</button>
-                   
+                    <button onclick="openModal('modal-pwa')" class="text-cyan-400 hover:underline cursor-pointer">Documentación y Evidencias &rarr;</button>
                 </div>
             </div>
 
-              <!-- Tarjeta recetario  -->
             <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between">
                 <div>
-                    
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400">React</span>
-                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400"> Nest JS</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400">NestJS</span>
                     </div>
-                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Recetario de comida</h3>
+                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Recetario de Comida</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Aplicación Web para la gestion de recetas incluyenbdo funcionalidades com busqueda por categoria y letra inical
+                        Aplicación Web para la gestión de recetas incluyendo funcionalidades como búsqueda por categoría y letra inicial.
                     </p>
                 </div>
                 <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
-                    <!-- Cambiado a botón con evento para abrir la vista previa -->
-                    <button onclick="openModal('recetario')" class="text-cyan-400 hover:underline cursor-pointer">Vista previa &rarr;</button>
-                   
-                </div>
-            </div>
-             <!-- Tarjeta directorio  -->
-            <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between">
-                <div>
-                    
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400"> Nest JS</span>
-                    </div>
-                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Directorio de contactos</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Aplicación Web para la consulta de información de contacto con filtros por género, ciudad y edad
-                    </p>
-                </div>
-                <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
-                    <!-- Cambiado a botón con evento para abrir la vista previa -->
-                    <button onclick="openModal('directorio')" class="text-cyan-400 hover:underline cursor-pointer">Vista previa &rarr;</button>
-                   
+                    <button onclick="openModal('modal-recetario')" class="text-cyan-400 hover:underline cursor-pointer">Documentación y Evidencias &rarr;</button>
                 </div>
             </div>
 
-            <!-- Tarjeta imc  -->
             <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between">
                 <div>
-                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400">NestJS</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-500/10 text-slate-400">REST API</span>
+                    </div>
+                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Directorio de Contactos</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Aplicación Web para la consulta de información de contacto con filtros por género, ciudad y edad.
+                    </p>
+                </div>
+                <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
+                    <button onclick="openModal('modal-directorio')" class="text-cyan-400 hover:underline cursor-pointer">Documentación y Evidencias &rarr;</button>
+                </div>
+            </div>
+
+            <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between">
+                <div>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400">React</span>
                     </div>
                     <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Calculadora de IMC</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Aplicación Web para el cálculo del Índice de Masa Corporal con interfaz intuitiva
+                        Aplicación Web para el cálculo del Índice de Masa Corporal con interfaz intuitiva.
                     </p>
                 </div>
                 <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
-                    <!-- Cambiado a botón con evento para abrir la vista previa -->
-                    <button onclick="openModal('icm')" class="text-cyan-400 hover:underline cursor-pointer">Vista previa &rarr;</button>
-                   
+                    <button onclick="openModal('modal-imc')" class="text-cyan-400 hover:underline cursor-pointer">Documentación y Evidencias &rarr;</button>
                 </div>
             </div>
 
-             <!-- Tarjeta entrenamientoPro  -->
             <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 hover:bg-slate-800/60 transition group flex flex-col justify-between">
                 <div>
-                    
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400">Kotlin</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400">Kotlin</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-green-500/10 text-green-400">Android</span>
                     </div>
-                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Aplicacion de Entrenamiento</h3>
+                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition mb-2">Aplicación de Entrenamiento</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Aplicación movil para la gestion de tiempo personalizado en rutinas de entrenamiento
+                        Aplicación móvil nativa orientada a la gestión precisa de rutinas cronometradas por intervalos de alta intensidad.
                     </p>
                 </div>
                 <div class="flex gap-4 pt-4 border-t border-slate-800/60 text-sm font-semibold">
-                    <!-- Cambiado a botón con evento para abrir la vista previa -->
-                    <button onclick="openModal('entrenamientoPro')" class="text-cyan-400 hover:underline cursor-pointer">Vista previa &rarr;</button>
-                   
+                    <button onclick="openModal('modal-entrenamiento')" class="text-cyan-400 hover:underline cursor-pointer">Documentación y Evidencias &rarr;</button>
                 </div>
             </div>
+
         </div>
     </main>
-
-    <!-- VENTANA MODAL 1: GALERÍA SITEMA DE INVENTARIO -->
 
     <div id="modal-pwa" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-slate-800 border border-slate-700 max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
             <div class="p-6 border-b border-slate-700 flex justify-between items-center bg-slate-800/50">
-                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Sistema de Inventario PWA</h3>
-                <button onclick="closeModal('modal-pwa')" class="text-slate-400 hover:text-white font-bold text-lg p-2 cursor-pointer">&times; Cerrar</button>
+                <h3 class="text-xl font-bold text-cyan-400">Documentación: Sistema de Inventario PWA</h3>
+                <button onclick="closeModal('modal-pwa')" class="text-slate-400 hover:text-white font-medium text-sm px-3 py-1 bg-slate-700 rounded-lg cursor-pointer">Cerrar</button>
             </div>
-            <!-- Contenedor con Scroll por si metes muchas imágenes -->
-            <div class="p-6 overflow-y-auto space-y-6">
-                <p class="text-sm text-slate-300">Aquí puedes ver capturas detalladas del funcionamiento real del sistema:</p>
-                
-                <!-- Añade aquí las rutas de tus imágenes reales -->
+            <div class="p-6 overflow-y-auto space-y-4 text-sm leading-relaxed">
+                <div><strong>Problema:</strong> Desorganización en almacenes comerciales físicos e incapacidad de actualización de existencias en tiempo real sin conexión estable.</div>
+                <div><strong>Tecnologías:</strong> React, Vite, Node.js, Service Workers.</div>
+                <div><strong>Arquitectura:</strong> Cliente-Servidor Desacoplado con estrategia Cache-First para soporte Offline.</div>
+                <div><strong>Funcionalidades:</strong> Registro y sincronización de stock, carrito offline, persistencia local (IndexedDB).</div>
+                <div class="pt-2"><a href="https://github.com/YaelLopezA" target="_blank" class="text-cyan-400 hover:underline font-bold">🔗 Ver Repositorio en GitHub</a></div>
+                <hr class="border-slate-700">
+                <span class="text-xs text-slate-400 block font-semibold mb-2">Galería de Evidencias de Funcionamiento Real:</span>
                 <div class="space-y-4">
-                   
                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
                         <span class="text-xs text-slate-400 block mb-2">1. Panel de Control de Inventario</span>
-                        <img src="img/vj/3.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                        <img src="img/vj/3.png" alt="Dashboard" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+3+no+encontrada'">
                     </div>
                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
                         <span class="text-xs text-slate-400 block mb-2">2. Panel de ventas</span>
-                        <img src="img/vj/4.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                        <img src="img/vj/4.png" alt="Ventas" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+4+no+encontrada'">
                     </div>
                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
                         <span class="text-xs text-slate-400 block mb-2">3. Carrito de compras</span>
-                        <img src="img/vj/5.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                        <img src="img/vj/5.png" alt="Carrito" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+5+no+encontrada'">
                     </div>
-                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
                         <span class="text-xs text-slate-400 block mb-2">4. Registro de plantas</span>
-                        <img src="img/vj/1.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                        <img src="img/vj/1.png" alt="Registro" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+1+no+encontrada'">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- VENTANA MODAL 1: Recetario -->
-    <div id="recetario" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div id="modal-recetario" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-slate-800 border border-slate-700 max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
             <div class="p-6 border-b border-slate-700 flex justify-between items-center bg-slate-800/50">
-                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Sistema para gestion de recetas</h3>
-                <button onclick="closeModal('recetario')" class="text-slate-400 hover:text-white font-bold text-lg p-2 cursor-pointer">&times; Cerrar</button>
+                <h3 class="text-xl font-bold text-cyan-400">Documentación: Sistema para gestión de recetas</h3>
+                <button onclick="closeModal('modal-recetario')" class="text-slate-400 hover:text-white font-medium text-sm px-3 py-1 bg-slate-700 rounded-lg cursor-pointer">Cerrar</button>
             </div>
-            <!-- Contenedor con Scroll por si metes muchas imágenes -->
-            <div class="p-6 overflow-y-auto space-y-6">
-                <p class="text-sm text-slate-300">Aquí puedes ver capturas detalladas del funcionamiento real del sistema:</p>
-                
-                <!-- Añade aquí las rutas de tus imágenes reales -->
+            <div class="p-6 overflow-y-auto space-y-4 text-sm leading-relaxed">
+                <div><strong>Problema:</strong> Complejidad en la búsqueda indexada de recetas culinarias y filtros ineficientes por ingredientes.</div>
+                <div><strong>Tecnologías:</strong> React, NestJS, JavaScript.</div>
+                <div><strong>Arquitectura:</strong> Modelo-Vista-Controlador (MVC) modular mediante inyección de dependencias en el Backend.</div>
+                <div><strong>Funcionalidades:</strong> Búsqueda algorítmica por letra inicial, filtrados reactivos por categorías, pasarela informativa.</div>
+                <div class="pt-2"><a href="https://github.com/YaelLopezA" target="_blank" class="text-cyan-400 hover:underline font-bold">🔗 Ver Repositorio en GitHub</a></div>
+                <hr class="border-slate-700">
+                <span class="text-xs text-slate-400 block font-semibold mb-2">Galería de Evidencias de Funcionamiento Real:</span>
                 <div class="space-y-4">
-                   
-                
-                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
-                        <span class="text-xs text-slate-400 block mb-2">1 Pantalla principal</span>
-                        <img src="img/recetario/1.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">1. Pantalla principal</span>
+                        <img src="img/recetario/1.png" alt="Principal" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+1+no+encontrada'">
                     </div>
-                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
-                        <span class="text-xs text-slate-400 block mb-2">2. Busqueda por categoria</span>
-                        <img src="img/recetario/2.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">2. Búsqueda por categoría</span>
+                        <img src="img/recetario/2.png" alt="Categoría" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
                     </div>
-                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
                         <span class="text-xs text-slate-400 block mb-2">3. Receta</span>
-                        <img src="img/recetario/3.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                        <img src="img/recetario/3.png" alt="Receta" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+3+no+encontrada'">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- VENTANA MODAL 1: Directorio -->
-    <div id="directorio" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div id="modal-directorio" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-slate-800 border border-slate-700 max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
             <div class="p-6 border-b border-slate-700 flex justify-between items-center bg-slate-800/50">
-                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Sistema de gestion de contactos</h3>
-                <button onclick="closeModal('directorio')" class="text-slate-400 hover:text-white font-bold text-lg p-2 cursor-pointer">&times; Cerrar</button>
+                <h3 class="text-xl font-bold text-cyan-400">Documentación: Sistema de gestión de contactos</h3>
+                <button onclick="closeModal('modal-directorio')" class="text-slate-400 hover:text-white font-medium text-sm px-3 py-1 bg-slate-700 rounded-lg cursor-pointer">Cerrar</button>
             </div>
-            <!-- Contenedor con Scroll por si metes muchas imágenes -->
-            <div class="p-6 overflow-y-auto space-y-6">
-                <p class="text-sm text-slate-300">Aquí puedes ver capturas detalladas del funcionamiento real del sistema:</p>
-                
-                <!-- Añade aquí las rutas de tus imágenes reales -->
+            <div class="p-6 overflow-y-auto space-y-4 text-sm leading-relaxed">
+                <div><strong>Problema:</strong> Ausencia de sistemas óptimos centralizados para la extracción y filtrado masivo de registros de usuarios según datos demográficos complejos.</div>
+                <div><strong>Tecnologías:</strong> NestJS, TypeScript, REST API.</div>
+                <div><strong>Arquitectura:</strong> Arquitectura Limpia basada en Módulos, Controladores y Servicios independientes.</div>
+                <div><strong>Funcionalidades:</strong> Endpoints optimizados para consultas asíncronas con filtrado condicional por género, ciudad y rango de edad.</div>
+                <div class="pt-2"><a href="https://github.com/YaelLopezA" target="_blank" class="text-cyan-400 hover:underline font-bold">🔗 Ver Repositorio en GitHub</a></div>
+                <hr class="border-slate-700">
+                <span class="text-xs text-slate-400 block font-semibold mb-2">Galería de Evidencias de Funcionamiento Real:</span>
                 <div class="space-y-4">
-                   
-                
-                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
-                        <span class="text-xs text-slate-400 block mb-2">1 Pantalla principal</span>
-                        <img src="img/directorio/1.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">1. Pantalla principal</span>
+                        <img src="img/directorio/1.png" alt="Directorio Principal" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+1+no+encontrada'">
                     </div>
-                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
-                        <span class="text-xs text-slate-400 block mb-2">2. Visualizacion de infomracion</span>
-                        <img src="img/directorio/2.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">2. Visualización de información</span>
+                        <img src="img/directorio/2.png" alt="Visualización" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
                     </div>
-                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
-                        <span class="text-xs text-slate-400 block mb-2">1 Filtro de busqueda por genero</span>
-                        <img src="img/directorio/3.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                    <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
+                        <span class="text-xs text-slate-400 block mb-2">3. Filtro de búsqueda por género</span>
+                        <img src="img/directorio/3.png" alt="Filtro" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+3+no+encontrada'">
                     </div>
-                    
                 </div>
             </div>
         </div>
     </div>
 
-    
-    <!-- VENTANA MODAL icm -->
-
-    <div id="icm" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div id="modal-imc" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-slate-800 border border-slate-700 max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
             <div class="p-6 border-b border-slate-700 flex justify-between items-center bg-slate-800/50">
-                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Calculadora de IMC</h3>
-                <button onclick="closeModal('icm')" class="text-slate-400 hover:text-white font-bold text-lg p-2 cursor-pointer">&times; Cerrar</button>
+                <h3 class="text-xl font-bold text-cyan-400">Documentación: Calculadora de IMC</h3>
+                <button onclick="closeModal('modal-imc')" class="text-slate-400 hover:text-white font-medium text-sm px-3 py-1 bg-slate-700 rounded-lg cursor-pointer">Cerrar</button>
             </div>
-            <!-- Contenedor con Scroll por si metes muchas imágenes -->
-            <div class="p-6 overflow-y-auto space-y-6">
-                <p class="text-sm text-slate-300">Aquí puedes ver capturas detalladas del funcionamiento real del sistema:</p>
-                
-                <!-- Añade aquí las rutas de tus imágenes reales -->
+            <div class="p-6 overflow-y-auto space-y-4 text-sm leading-relaxed">
+                <div><strong>Problema:</strong> Interfaces confusas y no optimizadas para el cálculo instantáneo de la condición física de pacientes o deportistas.</div>
+                <div><strong>Tecnologías:</strong> React, JavaScript, CSS Estructurado.</div>
+                <div><strong>Arquitectura:</strong> Arquitectura Basada en Componentes de Estado Único en el Frontend.</div>
+                <div><strong>Funcionalidades:</strong> Procesamiento en tiempo real de variables métricas, retroalimentación responsiva inmediata y renderizado dinámico.</div>
+                <div class="pt-2"><a href="https://github.com/YaelLopezA" target="_blank" class="text-cyan-400 hover:underline font-bold">🔗 Ver Repositorio en GitHub</a></div>
+                <hr class="border-slate-700">
+                <span class="text-xs text-slate-400 block font-semibold mb-2">Galería de Evidencias de Funcionamiento Real:</span>
                 <div class="space-y-4">
-                   
                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
-                        <span class="text-xs text-slate-400 block mb-2">1. Interface paraa calcular ICM</span>
-                        <img src="img/imc/1.png" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                        <span class="text-xs text-slate-400 block mb-2">1. Interfaz para calcular IMC</span>
+                        <img src="img/imc/1.png" alt="Interfaz IMC" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+1+no+encontrada'">
                     </div>
-                    
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- VENTANA MODAL entrenamientoPro -->
-
-    <div id="entrenamientoPro" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div id="modal-entrenamiento" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-slate-800 border border-slate-700 max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
             <div class="p-6 border-b border-slate-700 flex justify-between items-center bg-slate-800/50">
-                <h3 class="text-xl font-bold text-cyan-400">Evidencias: Aplicacion de Entrenamiento</h3>
-                <button onclick="closeModal('entrenamientoPro')" class="text-slate-400 hover:text-white font-bold text-lg p-2 cursor-pointer">&times; Cerrar</button>
+                <h3 class="text-xl font-bold text-cyan-400">Documentación: Aplicación de Entrenamiento</h3>
+                <button onclick="closeModal('modal-entrenamiento')" class="text-slate-400 hover:text-white font-medium text-sm px-3 py-1 bg-slate-700 rounded-lg cursor-pointer">Cerrar</button>
             </div>
-            <!-- Contenedor con Scroll por si metes muchas imágenes -->
-            <div class="p-6 overflow-y-auto space-y-6">
-                <p class="text-sm text-slate-300">Aquí puedes ver capturas detalladas del funcionamiento real de la aplicacion: </p>
-                
-                <!-- Añade aquí las rutas de tus imágenes reales -->
+            <div class="p-6 overflow-y-auto space-y-4 text-sm leading-relaxed">
+                <div><strong>Problema:</strong> Pérdida de precisión temporal en el entrenamiento deportivo debido a interrupciones lógicas por el hilo del sistema de audio nativo del móvil.</div>
+                <div><strong>Tecnologías:</strong> Kotlin, Java, XML Core.</div>
+                <div><strong>Arquitectura:</strong> Patrón de Diseño arquitectónico MVVM (Model-View-ViewModel).</div>
+                <div><strong>Funcionalidades:</strong> Configuración dinámica de cronómetros para rutinas personalizadas de alta intensidad, control de foco de audio asíncrono e hilos concurrentes.</div>
+                <div class="pt-2"><a href="https://github.com/YaelLopezA" target="_blank" class="text-cyan-400 hover:underline font-bold">🔗 Ver Repositorio en GitHub</a></div>
+                <hr class="border-slate-700">
+                <span class="text-xs text-slate-400 block font-semibold mb-2">Galería de Evidencias de Funcionamiento Real:</span>
                 <div class="space-y-4">
-                   
                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
-                        <span class="text-xs text-slate-400 block mb-2">1. Interface principal de la aplicacion movil</span>
-                        <img src="img/entrenamientoPro/1.jpeg" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                        <span class="text-xs text-slate-400 block mb-2">1. Interfaz principal de la aplicación móvil</span>
+                        <img src="img/entrenamientoPro/1.jpeg" alt="UI Principal" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+1+no+encontrada'">
                     </div>
                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
-                        <span class="text-xs text-slate-400 block mb-2">2. Creacion de rutina personalizada</span>
-                        <img src="img/entrenamientoPro/2.jpeg" alt="Captura 2" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
+                        <span class="text-xs text-slate-400 block mb-2">2. Creación de rutina personalizada</span>
+                        <img src="img/entrenamientoPro/2.jpeg" alt="Rutina Nueva" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+2+no+encontrada'">
                     </div>
                     <div class="bg-slate-900 p-2 rounded-xl border border-slate-700/30">
                         <span class="text-xs text-slate-400 block mb-2">3. Rutina en progreso</span>
-                        <img src="img/entrenamientoPro/3.jpeg" alt="Captura 3" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+3+no+encontrada'">
+                        <img src="img/entrenamientoPro/3.jpeg" alt="En Progreso" class="w-full rounded-lg object-contain" onerror="this.src='https://placehold.co/600x400/1e293b/fff?text=Captura+3+no+encontrada'">
                     </div>
-                    
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer id="sobre-mi" class="max-w-5xl mx-auto px-4 py-12 border-t border-slate-800 text-center text-sm text-slate-500">
+    <footer class="max-w-5xl mx-auto px-4 py-12 border-t border-slate-800 text-center text-sm text-slate-500">
         <p>© 2026 Yael Lopez Amador. Desarrollado con HTML y Tailwind CSS.</p>
-        <div class="mt-4 space-x-4">
-            <a href="#" class="hover:text-slate-300 transition">GitHub</a>
+        <div class="mt-4">
+            <a href="https://github.com/YaelLopezA" target="_blank" class="text-slate-400 hover:text-cyan-400 font-semibold transition">Mi Perfil Oficial de GitHub 🔗</a>
         </div>
     </footer>
 
-    <!-- LOGICA SCRIPT INTERACTIVO (Vanilla JS) -->
     <script>
         function openModal(modalId) {
             const modal = document.getElementById(modalId);
             if (modal) {
                 modal.classList.remove('hidden');
-                document.body.style.overflow = 'hidden'; // Evita scroll de fondo
+                document.body.style.overflow = 'hidden';
             }
         }
 
@@ -329,11 +303,10 @@
             const modal = document.getElementById(modalId);
             if (modal) {
                 modal.classList.add('hidden');
-                document.body.style.overflow = ''; // Devuelve el scroll
+                document.body.style.overflow = '';
             }
         }
 
-        // Cerrar al hacer clic fuera de la caja del modal
         window.onclick = function(event) {
             if (event.target.classList.contains('fixed')) {
                 event.target.classList.add('hidden');
